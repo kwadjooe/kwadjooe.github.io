@@ -23,7 +23,7 @@ email: kwadjooe@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A little presentation of myself. Support Engineer with different IT background.
   My area of focus are in Computer Networking, Windows Systems Administration, Linux Administration,
-  Web Site Design, Python Scripting, BASH, Powershel and All the Fun IT Stuff.
+  Web Site Design, Python Scripting, BASH, Powershell and All the Fun IT Stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: krystophee
@@ -41,7 +41,7 @@ links:
     url: /Articles
   - title: Contacts
     url: /Contacts
-    
+
 # Build settings
 theme: minima
 plugins:
