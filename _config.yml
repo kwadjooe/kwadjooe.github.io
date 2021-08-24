@@ -47,6 +47,17 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+# Added to make the sass work but it did not, will investigate
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+    - assets/css
+    - assets/vendor
+  style: compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
