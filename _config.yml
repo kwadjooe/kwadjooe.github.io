@@ -30,17 +30,10 @@ linkedin_username: krystophee
 github_username:  kwadjooe
 google_username: kwadjooe
 
-permalinks: /:categories/:title
-
+permalinks: /:title
 links:
   - title: About
-    url: /About
-  - title: Projects
-    url: /Projects
-  - title: Articles
-    url: /Articles
-  - title: Contacts
-    url: /Contacts
+    url: /about
 
 # Build settings
 theme: minima
