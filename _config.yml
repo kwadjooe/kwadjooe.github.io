@@ -41,6 +41,28 @@ plugins:
   - jekyll-feed
 
 
+# Default settings
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously 'post' in jekyll 2.2.
+    values:
+      author: Kwadjo Ed.
+      layout: "post"
+      category: learning
+  
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously 'post' in jekyll 2.2.
+    values:
+      layout: "page"
+      
+      
+
+
 # Added to make the sass work but it did not, will investigate
 
 sass:
