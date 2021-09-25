@@ -2,10 +2,13 @@
 
 title:  "Few Tips on Powershell"
 date:   2021-08-23 06:50:28 -0400
-image: pexels.jpg
+image: powershell-logo.jpeg
 ---
 
-This page is my one-stop-shop for all sorts of PowerShell-related, tips, tricks, hacks, suggestions, and other bits of wisdom I’ve gleaned over the last 15 years. These are not intended to carry biblical weight, but many are now part of accepted PowerShell community standards. I encourage you to try things out for yourself and see if they make sense to you. Feel free to ping me on Twitter if you have questions or comments about anything on this page.
+You are looking for PowerShell-related, tips, tricks? 
+You've find the right page. I share practicle knownlege and skils garthered from all over the internet and mostly from most respected authors that i personally follow because of the great content they present. 
+
+These are not intended to carry biblical weight, but many are now part of accepted PowerShell community standards. I encourage you to try things out for yourself and see if they make sense to you. Feel free to ping me on Twitter if you have questions or comments about anything on this page.
 
 This page is divided into sections. PowerShell Tweet Tips is a collection of short tips I occasionally post on my social media channels. The PowerShell Scripting and Toolmaking section contains a list of recommendations and advice. Many of these come from my classes and conference presentations.  Most of these suggestions are targeted at PowerShell beginners. As your PowerShell experience grows you may find the need to bend some of the suggestions.
 
