@@ -8,9 +8,14 @@ image: powershell-logo.jpeg
 You are looking for PowerShell-related, tips, tricks? 
 You've find the right page. I share practicle knownlege and skils garthered from all over the internet and mostly from most respected authors that i personally follow because of the great content they present. 
 
+    Quickly install some  component of the RSAT tool
 
+Add-WindowsCapability -name Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0 -Online
+Add-WindowsCapability -name Rsat.Dns.Tools~~~~0.0.1.0 -Online
+Add-WindowsCapability -name Rsat.GroupPolicy.Management.Tools~~~~0.0.1.0 -Online
+Add-WindowsCapability -name Rsat.ServerManager.Tools~~~~0.0.1.0 -Online
 
-Get the scriptblock content of a loaded function. Substitute the name of a function.
+    Get the scriptblock content of a loaded function. Substitute the name of a function.
 
 (get-item Function:\prompt).scriptblock
 

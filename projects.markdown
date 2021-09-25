@@ -1,7 +1,7 @@
 ---
 title: Projects
 permalink: /projects/
-image: project1.jpeg
+image: project1.jpg
 ---
 
 
