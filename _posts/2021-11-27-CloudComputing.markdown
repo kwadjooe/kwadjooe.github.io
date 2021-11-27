@@ -12,53 +12,41 @@ Welcome to the world of Cloud Computing
 
     What is Cloud  Computing ?
 
-Computer networking refers to connected computing devices (such as laptops, desktops, servers, smartphones, and tablets) and an ever-expanding array of IoT devices (such as cameras, door locks, doorbells, refrigerators, audio/visual systems, thermostats, and various sensors) that communicate with one another.
-    
+Simply put, cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change.
+
+Why would you want to adopt the Cloud ?
+
+Well here are some of the Top benefits of cloud computing
+
+Cloud computing is a big shift from the traditional way businesses think about IT resources. Here are seven common reasons organizations are turning to cloud computing services:
 
 
+    Cost
 
-How does a computer network work
+Cloud computing eliminates the capital expense of buying hardware and software and setting up and running on-site datacenters—the racks of servers, the round-the-clock electricity for power and cooling, and the IT experts for managing the infrastructure. It adds up fast.
 
-Specialized devices such as switches, routers, and access points form the foundation of computer networks.
+    Speed
 
-Switches connect and help to internally secure computers, printers, servers, and other devices to networks in homes or organizations. Access points are switches that connect devices to networks without the use of cables.
+Most cloud computing services are provided self service and on demand, so even vast amounts of computing resources can be provisioned in minutes, typically with just a few mouse clicks, giving businesses a lot of flexibility and taking the pressure off capacity planning.
 
-Routers connect networks to other networks and act as dispatchers. They analyze data to be sent across a network, choose the best routes for it, and send it on its way. Routers connect your home and business to the world and help protect information from outside security threats.
+    Global scale
 
-While switches and routers differ in several ways, one key difference is how they identify end devices. A Layer 2 switch uniquely identifies a device by its "burned-in" MAC address. A Layer 3 router uniquely identifies a device's network connection with a network-assigned IP address.
+The benefits of cloud computing services include the ability to scale elastically. In cloud speak, that means delivering the right amount of IT resources—for example, more or less computing power, storage, bandwidth—right when they’re needed, and from the right geographic location.
 
-Today, most switches include some level of routing functionality.
+    Productivity
 
-MAC and IP addresses uniquely define devices and network connections, respectively, in a network. A MAC address is a number assigned to a network interface card (NIC) by a device's manufacturer. An IP address is a number assigned to a network connection.
-How is computer networking evolving?
+On-site datacenters typically require a lot of “racking and stacking”—hardware setup, software patching, and other time-consuming IT management chores. Cloud computing removes the need for many of these tasks, so IT teams can spend time on achieving more important business goals.
 
-Modern-day networks deliver more than connectivity. Organizations are embarking on transforming themselves digitally. Their networks are critical to this transformation and to their success. The types of network architectures that are evolving to meet these needs are as follows:
+    Performance
 
-    Software-defined  (SDN): In response to new requirements in the "digital" age, network architecture is becoming more programmable, automated, and open. In software-defined networks, routing of traffic is controlled centrally through software-based mechanisms. This helps the network to react quickly to changing conditions.
-    Intent-based: Building on SDN principles, intent-based networking (IBN) not only introduces agility but also sets up a network to achieve desired objectives by automating operations extensively, analyzing its performance, pinpointing problematic areas, providing all-around security, and integrating with business processes.
-    Virtualized: The underlying physical network infrastructure can be partitioned logically, to create multiple "overlay" networks. Each of these logical networks can be tuned to meet specific security, quality-of-service (QoS), and other requirements.
-    Controller-based: Network controllers are crucial to scaling and securing networks. Controllers automate networking functions by translating business intent to device configurations, and they monitor devices continuously to help ensure performance and security. Controllers simplify operations and help organizations respond to changing business requirements.
-    Multidomain integrations: Larger enterprises may construct separate networks, also called networking domains, for their offices, WANs, and data centers. These networks communicate with one another through their controllers. Such cross-network, or multidomain, integrations generally involve exchanging relevant operating parameters to help ensure that desired business outcomes that span network domains are achieved.
+The biggest cloud computing services run on a worldwide network of secure datacenters, which are regularly upgraded to the latest generation of fast and efficient computing hardware. This offers several benefits over a single corporate datacenter, including reduced network latency for applications and greater economies of scale.
 
-Only Cisco offers a complete portfolio of modern network architectures for access, WANs, data centers, and cloud.
-Types of computer networks
+    Reliability
 
-While similar in their overall objectives, various types of networks fulfill different purposes. Networks today are classified in the broad categories below. 
-Local-area network (LAN)
+Cloud computing makes data backup, disaster recovery, and business continuity easier and less expensive because data can be mirrored at multiple redundant sites on the cloud provider’s network.
 
-A LAN is a collection of connected devices in one physical location, such as a home or an office. A LAN can be small or large, ranging from a home network with one user to a large enterprise network with thousands of users and devices. A LAN may include both wired and wireless devices.
 
-Regardless of size, a LAN's particular characteristic is that it connects devices that are in a single, limited area.
-Wide-area network (WAN)
+    Security
 
-A WAN extends over a large geographical area and connects individual users or multiple LANs. The Internet can be considered a WAN. Large organizations use WANs to connect their various sites, remote employees, suppliers, and data centers so they can run applications and access necessary data.
+Many cloud providers offer a broad set of policies, technologies, and controls that strengthen your security posture overall, helping protect your data, apps, and infrastructure from potential threats.
 
-Physical connectivity in WANs can be achieved by leased lines, cellular connections, satellite links, and other means.
-Enterprise network
-
-A network built for a large organization, typically called an enterprise, needs to fulfill exacting requirements. Since networking is crucial for any modern enterprise to function, enterprise networks must be highly available, scalable, and robust. These networks have tools that enable network engineers and operators to design, deploy, debug, and remediate them.
-
-An enterprise may use both LANs and WANs across its campus, branches, and data centers.
-Service-provider network
-
-Service providers operate WANs to provide connectivity to individual users or organizations. They may offer simple connectivity, in the form of leased lines, or more-advanced, managed services to enterprises. Service providers also supply Internet and cellular connectivity to their customers.
