@@ -7,8 +7,6 @@ permalink: /about/
 Hello, my name’s Kwadjo Edouwossi, and this is my portfolio web site. Welcome!
 I’m a techie who’s passionate about open source software, Computer Networking, Windows and Linux Systems Administration, Docker, Python scripting, Powershell and Cloud technology. i also love Music, 
 making products and whimsy. I currently work for the New York City Departement of Education where we help children Achieve their goals.
-This photo is of me making a silly face. I enjoy making silly faces.
-I’m at my best when I’m writing, solving problems or making stuff.
 
     Currently based in New York
     Favourite music: Jazz 🎈, R&B 🤖, Gospel 🎤, classical 🎻, ambient 🌚.
