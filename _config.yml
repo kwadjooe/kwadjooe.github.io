@@ -1,7 +1,7 @@
 # The Site Configuration
 
 # Import the theme
-# theme: jekyll-theme-chirpy  # Comment out for GitHub Pages deployment
+remote_theme: cotes2020/jekyll-theme-chirpy@v6.5.5
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -197,6 +197,15 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-archives
 
 jekyll-archives:
   enabled: [categories, tags]

@@ -2,11 +2,13 @@
 
 source "https://rubygems.org"
 
-# Jekyll core and theme
+# Jekyll core and theme  
 gem "jekyll", "~> 4.3.2"
-gem "jekyll-theme-chirpy", "~> 6.5", ">= 6.5.5"
+gem "github-pages", group: :jekyll_plugins
+# gem "jekyll-theme-chirpy", "~> 6.5", ">= 6.5.5"  # Use remote_theme instead
 
 # Jekyll plugins required for Chirpy theme
+gem "jekyll-remote-theme"
 gem "jekyll-paginate", "~> 1.1"
 gem "jekyll-redirect-from", "~> 0.16"
 gem "jekyll-seo-tag", "~> 2.8"
