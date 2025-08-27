@@ -1,7 +1,7 @@
 # The Site Configuration
 
 # Import the theme
-theme: jekyll-theme-chirpy
+# theme: jekyll-theme-chirpy  # Comment out for GitHub Pages deployment
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
   A portfolio website showcasing my projects, skills, and professional journey.
 
 # Site URL configuration
-url: "http://localhost:4000" # Development URL - change to production URL when deploying
+url: "https://kwadjooe.github.io" # Change to your actual GitHub Pages URL
 baseurl: "" # The subpath of your site, e.g. /blog
 
 # Development server settings
