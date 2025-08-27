@@ -1,0 +1,91 @@
+version: '3.8'
+
+services:
+  # Development environment
+  jekyll-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: jekyll-portfolio-dev
+    ports:
+      - "4000:4000"
+      - "35729:35729"  # LiveReload port
+    volumes:
+      # Mount source code (excluding build artifacts)
+      - .:/usr/src/app
+      # Create named volumes for build artifacts to improve performance
+      - jekyll-cache:/usr/src/app/.jekyll-cache
+      - jekyll-site:/usr/src/app/_site
+      # Mount bundle cache to speed up gem installation
+      - bundle-cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLE_PATH=/usr/local/bundle
+    command: >
+      sh -c "bundle install &&
+             bundle exec jekyll serve 
+             --config _config.yml,_config-dev.yml
+             --livereload 
+             --livereload-port 35729
+             --force_polling
+             --verbose"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    profiles:
+      - dev
+
+  # Production build environment
+  jekyll-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: jekyll-portfolio-prod
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/usr/src/app:ro  # Read-only mount for production
+      - jekyll-site-prod:/usr/src/app/_site
+    environment:
+      - JEKYLL_ENV=production
+    profiles:
+      - prod
+
+  # Utility service for running Jekyll commands
+  jekyll-utils:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: jekyll-utils
+    volumes:
+      - .:/usr/src/app
+      - jekyll-cache:/usr/src/app/.jekyll-cache
+      - bundle-cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+    profiles:
+      - utils
+    command: sh
+
+volumes:
+  jekyll-cache:
+    driver: local
+  jekyll-site:
+    driver: local
+  jekyll-site-prod:
+    driver: local
+  bundle-cache:
+    driver: local
+
+networks:
+  default:
+    name: jekyll-network

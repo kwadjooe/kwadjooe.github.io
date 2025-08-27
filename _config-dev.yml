@@ -1,0 +1,61 @@
+# Development-specific configuration overrides
+# This file extends the main _config.yml for local development
+
+# Development URL
+url: "http://localhost:4000"
+baseurl: ""
+
+# Force server to bind to all interfaces
+host: 0.0.0.0
+port: 4000
+
+# Enable development features
+show_drafts: true
+future: true
+unpublished: true
+
+# Detailed logging for debugging
+verbose: true
+trace: true
+
+# Disable optimizations for faster builds
+compress_html:
+  clippings: none
+  comments: none
+  endings: none
+  ignore:
+    envs: [development]
+
+# Exclude docs from build to speed up development
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - rollup.config.js
+  - package*.json
+  - scripts
+  - Dockerfile*
+  - docker-compose*.yml
+  - .dockerignore
+  - .gitignore
+  - nginx
+
+# Enable incremental builds for development
+incremental: true
+
+# Disable PWA for development
+pwa:
+  enabled: false
+  cache:
+    enabled: false
+
+# Development-specific plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache

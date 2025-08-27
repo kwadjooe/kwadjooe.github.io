@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Production Jekyll build
+  jekyll-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: jekyll-build
+    volumes:
+      - .:/usr/src/app:ro
+      - ./dist:/usr/src/app/_site
+    environment:
+      - JEKYLL_ENV=production
+    command: bundle exec jekyll build
+
+  # Nginx server for production serving
+  nginx:
+    image: nginx:alpine
+    container_name: jekyll-nginx
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - jekyll-build
+    restart: unless-stopped
+
+  # Optional: SSL certificate generation with Let's Encrypt
+  certbot:
+    image: certbot/certbot
+    container_name: jekyll-certbot
+    volumes:
+      - ./nginx/ssl:/etc/letsencrypt
+      - ./dist:/var/www/html:ro
+    profiles:
+      - ssl
+    command: >
+      certonly --webroot --webroot-path=/var/www/html
+      --email your-email@example.com
+      --agree-tos --no-eff-email
+      -d yourdomain.com
+
+volumes:
+  ssl-certs:
+    driver: local
