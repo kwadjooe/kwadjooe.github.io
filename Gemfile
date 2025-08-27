@@ -5,9 +5,6 @@ source "https://rubygems.org"
 # GitHub Pages gem includes Jekyll and compatible plugin versions
 gem "github-pages", group: :jekyll_plugins
 
-# Remote theme support
-gem "jekyll-remote-theme"
-
 # Testing and development
 gem "html-proofer", "~> 5.0", group: :test
 

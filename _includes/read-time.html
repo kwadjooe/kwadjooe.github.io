@@ -1,8 +1,0 @@
-{%- assign words = content | strip_html | number_of_words -%}
-{%- assign reading_time = words | divided_by: 200 -%}
-{%- assign reading_time = reading_time | at_least: 1 -%}
-
-<span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="{{ reading_time }} min read">
-  <em>{{ reading_time }} min read</em>
-</span>
