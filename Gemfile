@@ -2,25 +2,14 @@
 
 source "https://rubygems.org"
 
-# Jekyll core and theme  
-gem "jekyll", "~> 4.3.2"
+# GitHub Pages gem includes Jekyll and compatible plugin versions
 gem "github-pages", group: :jekyll_plugins
-# gem "jekyll-theme-chirpy", "~> 6.5", ">= 6.5.5"  # Use remote_theme instead
 
-# Jekyll plugins required for Chirpy theme
+# Remote theme support
 gem "jekyll-remote-theme"
-gem "jekyll-paginate", "~> 1.1"
-gem "jekyll-redirect-from", "~> 0.16"
-gem "jekyll-seo-tag", "~> 2.8"
-gem "jekyll-archives", "~> 2.2"
-gem "jekyll-sitemap", "~> 1.4"
-gem "jekyll-feed", "~> 0.17"
 
 # Testing and development
 gem "html-proofer", "~> 5.0", group: :test
-
-# Performance and caching
-gem "jekyll-include-cache", "~> 0.2"
 
 # Windows/JRuby platform support
 platforms :mingw, :x64_mingw, :mswin, :jruby do
@@ -33,8 +22,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-
-# Additional gems for development
-group :jekyll_plugins do
-  gem "jekyll-compose", "~> 0.12.0"
-end
