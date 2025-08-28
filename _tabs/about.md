@@ -45,7 +45,7 @@ I'm passionate about creating secure, scalable applications while staying curren
 I'm always interested in discussing technology, collaborating on projects, or sharing knowledge with fellow developers and security professionals.
 
 - **GitHub**: [github.com/kwadjooe](https://github.com/kwadjooe)
-- **LinkedIn**: [linkedin.com/in/kwadjooe](https://www.linkedin.com/in/kwadjooe)  
+- **LinkedIn**: [linkedin.com/in/kwadjooe](https://www.linkedin.com/in/kwadjo-edouwossi-12773283)  
 - **Email**: [kwadjooe@gmail.com](mailto:kwadjooe@gmail.com)
 
 Feel free to explore my blog posts to learn more about my technical journey and the projects I'm working on!
