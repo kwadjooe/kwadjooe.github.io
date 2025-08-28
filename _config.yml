@@ -14,7 +14,7 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: KWADJO # the main title
+title: Kwadjoe # the main title
 
 tagline: Computer Technologist # it will display as the subtitle
 
@@ -39,7 +39,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/kwadjooe # change to your github homepage
-    - https://www.linkedin.com/in/kwadjooe # change to your linkedin profile
+    - https://www.linkedin.com/in/kwadjo-edouwossi-12773283 # change to your linkedin profile
     - mailto:kwadjooe@gmail.com # email contact
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
